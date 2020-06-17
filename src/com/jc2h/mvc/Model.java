@@ -1,7 +1,6 @@
 package com.jc2h.mvc;
 
 import com.jc2h.marbas.core.tree.Node;
-import com.sun.istack.internal.NotNull;
 import processing.core.PApplet;
 
 public class Model extends Node<Model> {
@@ -22,13 +21,13 @@ public class Model extends Node<Model> {
     }
 
     public View getView(){return view;}
-    public void setView(@NotNull View view){
+    public void setView(View view){
         assert this.view != null;
         this.view.replace(view);
         this.view = view;
     }
     public Controller getController(){return controller;}
-    public void setController(@NotNull Controller controller){
+    public void setController(Controller controller){
         assert this.controller != null;
         this.controller.replace(controller);
         this.controller = controller;
